@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2021. JPoem Project.
+ */
+
+plugins {
+    id 'org.jetbrains.intellij' version '1.3.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.5.21'
+}
+
+group 'cn.jpoem'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+}
+
+intellij {
+    version.set("2021.1.1")
+    pluginName.set("jpoem")
+    updateSinceUntilBuild.set(false)
+}

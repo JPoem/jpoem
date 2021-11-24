@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright (c) 2021. JPoem Project.
+  -->
+
+<idea-plugin>
+  <actions>
+    <group description="JPoem menu" id="JPoem.JPoemMenu" text="JPoem">
+      <action class="cn.jpoem.plugin.actions.JpoemLogin" description="Login"
+        id="JPoem.JPoemMenu.Login" text="Login"/>
+      <add-to-group anchor="last" group-id="MainMenu"/>
+    </group>
+  </actions>
+  <depends>com.intellij.modules.platform</depends>
+  <description><![CDATA[
+    JPoem. API Design & Mock & Manager<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <id>cn.jpoem.plugin</id>
+
+  <name>JPoem</name>
+
+  <vendor email="896369042@qq.com">baimao</vendor>
+</idea-plugin>
